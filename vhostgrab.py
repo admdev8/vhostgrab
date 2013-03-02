@@ -235,7 +235,6 @@ def main(argv):
     print("[*] Starting VHOST Threads...\n")
     queues = []
     for host, ip, port, use_ssl in hosts:
-        print(host, ip, port, use_ssl)
         res, queue = set_up(host, ip, port, use_ssl, wordlist, args.threads, out_queue, args.append)
         if not res:
             print("[X] Error.")
