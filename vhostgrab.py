@@ -126,7 +126,6 @@ def http_worker(ip, port, use_ssl, input_queue, output_queue, append):
         if append != "":
             vhost += append
         res, data = http_get(ip, port, vhost, use_ssl)
-        print(res, data)
         if res:
             _, code, status, length, content_location = data
             if non_code and (code == non_code) and (status == non_status) and (length == non_length) and (content_location == non_content_location):
