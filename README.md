@@ -1,4 +1,4 @@
 vhostgrab
 =========
 
-vhostGrab is a virtual host enumeration script
+vhostGrab is a virtual host enumeration script.
